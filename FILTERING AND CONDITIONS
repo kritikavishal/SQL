@@ -1,0 +1,18 @@
+#Write a query to fetch the top 5 highest salaries.
+SELECT salary 
+FROM employee 
+ORDER BY salary DESC 
+LIMIT 5;
+
+
+#Write a query to fetch the second highest salary.
+SELECT salary 
+FROM employee 
+ORDER BY salary DESC 
+LIMIT 1 OFFSET 1;
+
+
+#Write a query to sort by salary descending and then by name ascending.
+SELECT * 
+FROM employee 
+ORDER BY salary DESC, first_name ASC;
